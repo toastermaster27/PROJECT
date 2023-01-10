@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Theatre Project</title>
 </head>
+<header>
+    <nav>
+        <button onclick="scrollFunction1()"> About </button>
+        <button onclick="scrollFunction2()"> Contact </button>
+        <button onclick="openMenu()"> Menu </button>
+
+    </nav>
+    <p>Riviera Theatre</p>
+
+</header>
 <body>
-    <div>
-        <nav id=navigation></nav>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img3.jpg" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+    <div id="aboutus">
+        <p id="head1">About Us</p>
+        <p>The Riviera Theatre is a 370 seat venue in Three Rivers, Michigan. Located in our beautiful, historic downtown,
+         it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
+          Built in 1911, it is the oldest movie theatre in the south-west Michigan area. </p>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
