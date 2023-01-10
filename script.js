@@ -8,7 +8,7 @@ function scrollFunction1() {
   });
 }
 function scrollFunction2() {
-  let e = document.getElementById("el2");
+  let e = document.getElementById("endContact");
   e.scrollIntoView({
     block: 'end',
     behavior: 'smooth',

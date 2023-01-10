@@ -14,7 +14,7 @@
         <button onclick="openMenu()"> Menu </button>
 
     </nav>
-    <p>Riviera Theatre</p>
+    <p id="title1">Riviera Theatre</p>
 
 </header>
 <body>
@@ -46,7 +46,7 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <div id="aboutus">
+    <div id="aboutus" class="box">
         <p id="head1">About Us</p>
         <p>The Riviera Theatre is a 370 seat venue in Three Rivers, Michigan. Located in our beautiful, historic downtown,
          it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
@@ -55,4 +55,31 @@
     </div>
     <script src="script.js"></script>
 </body>
+<footer id="contactForm">
+    <div class="container">
+        <p id="contactForm">Contact</p>
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+          <div id="endContact"></div>
+      
+        </form>
+      </div>
+  </footer>
 </html>

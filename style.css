@@ -86,14 +86,83 @@
   to {opacity: 1}
 }
 
+button {
+    font-size: medium;
+    height: 50px;
+    width: 100px;
+    
+  }
+  #title1 {
+    text-align: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+
 #aboutus {
     text-align: left;
     border: 1px solid darkblue;
-    padding-left: 25px;
-    padding-right: 60%;
+    padding: 15px 20px;
+    margin: auto;
+    display: inline-block;
+    height: fit-content;
+    margin-right: 55%;
+    margin-left: 40px;
 }
 
 #head1 {
     font-size: larger;
     font-weight: 200;
+}
+
+#contactForm {
+    font-size: larger;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contactSect {
+    margin: 25px;
+    padding-top: 10px;
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+ 
+  input[type=submit] {
+    background-color: darkred;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ 
+  input[type=submit]:hover {
+    background-color: darkred;
+  }
+  
+ 
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+#emailClick {
+    justify-items: center;
+
+}
+#fBook {
+
 }
