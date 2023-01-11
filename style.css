@@ -183,3 +183,12 @@ input[type=text], select, textarea {
 #fBook {
 
 }
+
+#player {
+  absolute()
+  margin auto
+  top 50%
+  left 50%
+  transform translate(-50%,-50%)
+
+}
