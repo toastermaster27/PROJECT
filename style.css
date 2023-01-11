@@ -122,8 +122,8 @@ button:hover {
     margin: auto;
     display: inline-block;
     height: fit-content;
-    margin-right: 55%;
-    margin-left: 40px;
+    flex: 1;
+   
 }
 
 #head1 {
@@ -185,10 +185,17 @@ input[type=text], select, textarea {
 }
 
 #player {
-  absolute()
-  margin auto
-  top 50%
-  left 50%
-  transform translate(-50%,-50%)
+  text-align: left;
+    border: 1px solid darkblue;
+    padding: 15px 20px;
+    margin: auto;
+    display: inline-block;
+    flex: 1;
 
+   
 }
+
+#youtube { 
+  display: flex;
+  
+} 
