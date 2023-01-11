@@ -86,7 +86,7 @@
   to {opacity: 1}
 }
 
-button {
+#btn1 {
     font-size: medium;
     height: 50px;
     width: 100px;
@@ -95,7 +95,7 @@ button {
     border: none;
     padding-bottom: 20px;
   }
-button:hover {
+  #btn1:hover {
     background-color: #bbb;
 
 }
@@ -117,13 +117,18 @@ button:hover {
 
 #aboutus {
     text-align: left;
-    border: 1px solid darkblue;
+    border: 1px solid #5A5A5A;
+    color: #5A5A5A;
     padding: 15px 20px;
     margin: auto;
     display: inline-block;
     height: fit-content;
+
     flex: 1;
    
+    margin-right: 50.2%;
+    margin-left: 40px;
+
 }
 
 #head1 {
@@ -178,9 +183,67 @@ input[type=text], select, textarea {
   }
 #emailClick {
     justify-items: center;
-
 }
-#fBook {
+
+
+
+.reservation {
+  background-color: #777;
+  width: 500px;
+  margin: 0;
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  background-color:black;
+  color: white;
+}
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: none;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+#btn2 {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 
 }
 
@@ -199,3 +262,8 @@ input[type=text], select, textarea {
   display: flex;
   
 } 
+
+#btn2:hover {
+  border: 2px solid black;
+}
+
