@@ -86,7 +86,7 @@
   to {opacity: 1}
 }
 
-button {
+#btn1 {
     font-size: medium;
     height: 50px;
     width: 100px;
@@ -95,7 +95,7 @@ button {
     border: none;
     padding-bottom: 20px;
   }
-button:hover {
+  #btn1:hover {
     background-color: #bbb;
 
 }
@@ -229,7 +229,7 @@ div.elem-group.inlined input {
   display: inline-block;
 }
 
-button {
+#btn2 {
   height: 50px;
   background: orange;
   border: none;
@@ -240,6 +240,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#btn2:hover {
   border: 2px solid black;
 }
