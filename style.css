@@ -1,4 +1,6 @@
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -13,7 +15,8 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -35,10 +38,21 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
+.upcoming-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#upcoming-shows {
+  margin: 20px 0px;
+}
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -71,7 +85,8 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -82,116 +97,115 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #btn1 {
-    font-size: medium;
-    height: 50px;
-    width: 100px;
-    background-color: white;
-    height: 30px;
-    border: none;
-    padding-bottom: 20px;
-  }
-  #btn1:hover {
-    background-color: #bbb;
-
+  font-size: medium;
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  height: 30px;
+  border: none;
+  padding-bottom: 20px;
 }
-  nav {
-    display: flex;
-    background-color: white;
-    justify-content: space-around;
-    width: 80vw;
-    border-bottom: 3px solid #717171;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+#btn1:hover {
+  background-color: #bbb;
+}
+nav {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  width: 80vw;
+  border-bottom: 3px solid #717171;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  #title1 {
-    text-align: center;
-    font-size: x-large;
-  }
+#title1 {
+  text-align: center;
+  font-size: x-large;
+}
 
 #aboutus {
-    text-align: left;
-    border: 1px solid #5A5A5A;
-    color: #5A5A5A;
-    padding: 15px 20px;
-    height: 100%;
-    display: inline-block;
-    font-size: x-large;
-    flex: 1;
+  text-align: left;
+  border: 1px solid #5a5a5a;
+  color: #5a5a5a;
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: x-large;
+  flex: 1;
 }
 
 #head1 {
-    font-size: larger;
-    font-weight: 200;
+  font-size: larger;
+  font-weight: 200;
 }
 
 #contactForm {
-    font-size: larger;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #contactSect {
-    margin: 25px;
-    padding-top: 10px;
-    font-size: larger;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 25px;
+  padding-top: 10px;
+  font-size: larger;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  
- 
-  input[type=submit] {
-    background-color: darkred;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
- 
-  input[type=submit]:hover {
-    background-color: darkred;
-  }
-  
- 
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: darkred;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkred;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 #emailClick {
-    justify-items: center;
+  justify-items: center;
 }
-
-
 
 .reservation {
   background-color: #777;
   width: 500px;
-  margin: 0;
+  margin: 10px auto;
   padding: 50px;
 }
 
 h1 {
   text-align: center;
-  background-color:black;
+  background-color: black;
   color: white;
 }
 
@@ -208,17 +222,19 @@ div.elem-group.inlined {
 
 label {
   display: block;
-  font-family: 'Nanum Gothic';
+  font-family: "Nanum Gothic";
   padding-bottom: 10px;
   font-size: 1.25em;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   border-radius: 2px;
   border: 2px solid #777;
   box-sizing: border-box;
   font-size: 1.25em;
-  font-family: 'Nanum Gothic';
+  font-family: "Nanum Gothic";
   width: 100%;
   padding: 10px;
 }
@@ -234,28 +250,36 @@ div.elem-group.inlined input {
   border: none;
   color: white;
   font-size: 1.25em;
-  font-family: 'Nanum Gothic';
+  font-family: "Nanum Gothic";
   border-radius: 4px;
   cursor: pointer;
 }
 
-
-
 #player {
   text-align: left;
-    border: 1px solid darkblue;
-    padding: 15px 20px;
-    margin: auto;
-    display: inline-block;
-    flex: 1;
+  border: 1px solid darkblue;
+  padding: 15px 20px;
+  margin: auto;
+  display: inline-block;
+  flex: 1;
 }
 
-#youtube { 
+#youtube {
+  width: 100%;
   display: flex;
-  align-items: stretch;
-} 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  /* align-items: stretch; */
+}
 
 #btn2:hover {
   border: 2px solid black;
 }
 
+@media screen and (max-width: 500px) {
+  .reservation {
+    width: 100%;
+  }
+}
