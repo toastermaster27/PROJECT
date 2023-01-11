@@ -120,15 +120,10 @@
     border: 1px solid #5A5A5A;
     color: #5A5A5A;
     padding: 15px 20px;
-    margin: auto;
+    height: 100%;
     display: inline-block;
-    height: fit-content;
-
+    font-size: x-large;
     flex: 1;
-   
-    margin-right: 50.2%;
-    margin-left: 40px;
-
 }
 
 #head1 {
@@ -245,7 +240,6 @@ div.elem-group.inlined input {
 }
 
 
-}
 
 #player {
   text-align: left;
@@ -254,13 +248,11 @@ div.elem-group.inlined input {
     margin: auto;
     display: inline-block;
     flex: 1;
-
-   
 }
 
 #youtube { 
   display: flex;
-  
+  align-items: stretch;
 } 
 
 #btn2:hover {
