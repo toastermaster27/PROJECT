@@ -45,6 +45,7 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+
     <div id="elementContainer">
       <section id="upcoming-shows">
         <h2>Upcoming Shows</h2>
@@ -57,13 +58,18 @@
           </ul>
       </section>
     </div>
+    <div id="youtube" >
+      <div id="aboutus" class="box">
+          <p id="head1">About Us</p>
+          <p>The Riviera Theatre is a 370 seat venue in Three Rivers, Michigan. Located in our beautiful, historic downtown,
+          it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
+            Built in 1911, it is the oldest movie theatre in the south-west Michigan area. </p>
+      </div>
+          <script src="script.js"></script>
+          <div id="player"></div>
+          
 
-    <div id="aboutus" class="box">
-        <h3 id="head1">About Us</h3>
-        <p>The Riviera Theatre is a 370 seat venue in Three Rivers, Michigan. Located in our beautiful, historic downtown,
-         it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
-          Built in 1911, it is the oldest movie theatre in the south-west Michigan area. </p>
-    </div>
+   
     <div>
 
     </div>
@@ -109,23 +115,80 @@
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
       
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
       
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: 'CD-E-LDc384',
+                playerVars: {
+                  'playsinline': 1
+                },
+                events: {
+                  'onReady': onPlayerReady,
+                  'onStateChange': onPlayerStateChange
+                }
+              });
+            }
       
-          <input type="submit" value="Submit">
-          <div id="endContact"></div>
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+              event.target.playVideo();
+            }
       
-        </form>
-      </div>
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+            function onPlayerStateChange(event) {
+              if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 60000);
+                done = true;
+              }
+            }
+            function stopVideo() {
+              player.stopVideo();
+            }
+          </script>
+    </div>
+    </body>
+    <footer id="contactForm">
+        <div class="container">
+            <p id="contactForm">Contact</p>
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+              <div id="endContact"></div>
+          
+            </form>
+          </div>
+
+   
   </footer>
 </html>
