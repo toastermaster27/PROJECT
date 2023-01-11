@@ -123,8 +123,12 @@
     margin: auto;
     display: inline-block;
     height: fit-content;
+
+    flex: 1;
+   
     margin-right: 50.2%;
     margin-left: 40px;
+
 }
 
 #head1 {
@@ -239,6 +243,25 @@ div.elem-group.inlined input {
   border-radius: 4px;
   cursor: pointer;
 }
+
+
+}
+
+#player {
+  text-align: left;
+    border: 1px solid darkblue;
+    padding: 15px 20px;
+    margin: auto;
+    display: inline-block;
+    flex: 1;
+
+   
+}
+
+#youtube { 
+  display: flex;
+  
+} 
 
 #btn2:hover {
   border: 2px solid black;
