@@ -43,19 +43,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-fetch("https://api.weather.gov/gridpoints/OUN/89,78/forecast")
-.then(response => response.json())
-.then(data => {
+
+fetch("https://api.weather.gov/gridpoints/IWX/48,75/forecast")
+        .then(response => response.json())
+        .then(data => {
     // Get the forecast elements from the API response
     const forecast = data.properties.periods;
-
     // Create a container for the forecast
     const forecastContainer = document.createElement("div");
     forecastContainer.classList.add("forecast");
-
     // Iterate over the forecast elements
     forecast.forEach(day => {
-        if (forecast.indexOf(day)<=4) { 
+        if (forecast.indexOf(day)<=7) {
           // Create a div for each day
           const dayContainer = document.createElement("div");
           dayContainer.classList.add("day");
@@ -76,7 +75,7 @@ fetch("https://api.weather.gov/gridpoints/OUN/89,78/forecast")
     });
 
     // Add the forecast container to the HTML
-    const weather = document.getElementById("weather");
+    const weather = document.getElementById("forecast");
     weather.appendChild(forecastContainer);
 });
 
