@@ -1,4 +1,3 @@
-
 function scrollFunction1() {
   let e = document.getElementById("aboutus");
   e.scrollIntoView({
@@ -8,15 +7,7 @@ function scrollFunction1() {
   });
 }
 function scrollFunction2() {
-  let e = document.getElementById("el2");
-  e.scrollIntoView({
-    block: 'end',
-    behavior: 'smooth',
-    inline: 'end'
-  });
-}
-function scrollFunction3() {
-  let e = document.getElementById("el3");
+  let e = document.getElementById("endContact");
   e.scrollIntoView({
     block: 'end',
     behavior: 'smooth',
@@ -67,19 +58,24 @@ fetch("https://api.weather.gov/gridpoints/IWX/48,75/forecast")
           // Create a div for each day
           const dayContainer = document.createElement("div");
           dayContainer.classList.add("day");
+
           // Add the date to the div
           const date = document.createElement("p");
           date.innerHTML = day.name;
           dayContainer.appendChild(date);
+
           // Add the temperature to the div
           const temperature = document.createElement("p");
           temperature.innerHTML = `${day.temperature}°F,  ${day.shortForecast}`;
           dayContainer.appendChild(temperature);
+
           // Add the day container to the forecast container
           forecastContainer.appendChild(dayContainer);
         }
     });
+
     // Add the forecast container to the HTML
     const weather = document.getElementById("forecast");
     weather.appendChild(forecastContainer);
 });
+

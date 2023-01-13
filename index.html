@@ -7,17 +7,20 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Theatre Project</title>
 </head>
-<header>
-    <nav>
-        <button onclick="scrollFunction1()"> About </button>
-        <button onclick="scrollFunction2()"> Contact </button>
-        <button onclick="openMenu()"> Menu </button>
 
-    </nav>
-    <p>Riviera Theatre</p>
-
-</header>
 <body>
+  <header>
+    <p id="title1">Riviera Theatre</p>
+    <nav>
+        <button id="btn1" onclick="scrollFunction1()"> About
+        <div class="line"></div> </button>
+        <button id="btn1" onclick="scrollFunction2()"> Contact
+          <div class="line"></div> </button>
+        <button id="btn1" onclick="openMenu()"> Menu 
+          <div class="line"></div></button>
+    </nav>
+<!-- comment idk -->
+</header>
     <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
@@ -56,7 +59,163 @@
          it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
           Built in 1911, it is the oldest movie theatre in the south-west Michigan area. </p>
 
+    <div class="upcoming-con">
+
+      <section id="upcoming-shows">
+        <h2>Upcoming Shows</h2>
+          <ul>
+              <li>
+                  <span class="artist">Metallica</span>
+                  <span class="date-time">February 14, 2023 at 6:00 PM</span>
+                  <span class="location">48 N. Main St, Three Rivers, MI, 49093</span>
+              </li>
+          </ul>
+      </section>
+  
+    <div id="youtube" >
+      <div id="aboutus" class="box">
+          <p id="head1">About Us</p>
+          <p>The Riviera Theatre is a 370 seat venue in Three Rivers, Michigan. Located in our beautiful, historic downtown,
+          it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
+            Built in 1911, it is the oldest movie theatre in the south-west Michigan area.</p>
+      </div>
+          <script src="script.js"></script>
+          <div id="player"></div>
     </div>
+          
+
+    <section id="upcoming-shows">
+      <h2>Upcoming Shows</h2>
+        <ul>
+            <li>
+                <span class="artist">Metallica</span>
+                <span class="date-time">February 14, 2023 at 6:00 PM</span>
+                <span class="location">48 N. Main St, Three Rivers, MI, 49093</span>
+            </li>
+        </ul>
+    </section>
+
+    </div>
+
+  
+
+    <div class="reservation">
+      <h1>RESERVE NOW</h1>
+      <form action="reservation.php" method="post">
+          <div class="elem-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+              <label for="email">Your E-mail</label>
+              <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+          </div>
+          <div class="elem-group">
+              <label for="phone">Your Phone</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+          </div>
+          <div class="elem-group inlined">
+              <label for="adult">Adults</label>
+              <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+          </div>
+          <div class="elem-group inlined">
+              <label for="child">Children</label>
+              <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+          </div>
+          <div class="elem-group inlined">
+              <label for="checkin-date">Check-in Date</label>
+              <input type="date" id="checkin-date" name="checkin" required>
+          </div>
+          <button id ="btn2" type="submit">Reserve Now</button>
+      </form>
+    </div>
+
     <script src="script.js"></script>
 </body>
+<footer id="contactForm">
+    <div class="container">
+        <p id="contactForm">Contact</p>
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+      
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: 'CD-E-LDc384',
+                playerVars: {
+                  'playsinline': 1
+                },
+                events: {
+                  'onReady': onPlayerReady,
+                  'onStateChange': onPlayerStateChange
+                }
+              });
+            }
+      
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+              event.target.playVideo();
+            }
+      
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+            function onPlayerStateChange(event) {
+              if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 60000);
+                done = true;
+              }
+            }
+            function stopVideo() {
+              player.stopVideo();
+            }
+          </script>
+
+    </div>
+    
+    </body>
+    <footer id="contactForm">
+        <div class="container">
+            <p id="contactForm1">Contact</p>
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+              <div id="endContact"></div>
+          
+            </form>
+          </div>
+
+   
+  </footer>
 </html>
