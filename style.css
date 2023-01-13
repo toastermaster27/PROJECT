@@ -169,6 +169,19 @@ nav {
 }
 
 #head1 {
+    font-size: larger;
+    font-weight: 200;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
   font-size: larger;
   font-weight: 200;
 }
