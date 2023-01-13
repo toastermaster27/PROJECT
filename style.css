@@ -211,7 +211,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: darkred;
+  background-color: gray;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -220,7 +220,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: darkred;
+  background-color: gray;
 }
 
 .container {
@@ -290,7 +290,7 @@ div.elem-group.inlined input {
 
 #btn2 {
   height: 50px;
-  background: orange;
+  background:rgba(0, 0, 0, 0.8);
   border: none;
   color: white;
   font-size: 1.25em;
@@ -332,4 +332,17 @@ div.elem-group.inlined input {
   .reservation {
     width: 95%;
   }
+}
+.forecast-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.day {
+  background-color: lightgrey;
+  border:1px solid #5a5a5a;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
