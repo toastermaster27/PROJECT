@@ -1,4 +1,3 @@
-
 function scrollFunction1() {
   let e = document.getElementById("aboutus");
   e.scrollIntoView({
@@ -9,14 +8,6 @@ function scrollFunction1() {
 }
 function scrollFunction2() {
   let e = document.getElementById("endContact");
-  e.scrollIntoView({
-    block: 'end',
-    behavior: 'smooth',
-    inline: 'end'
-  });
-}
-function scrollFunction3() {
-  let e = document.getElementById("el3");
   e.scrollIntoView({
     block: 'end',
     behavior: 'smooth',
