@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
     <title>Theatre Project</title>
 </head>
 
@@ -52,19 +53,6 @@
         
 </div>
 
-
-    <!-- <div class="upcoming-con">
-
-      <section id="upcoming-shows">
-        <h2>Upcoming Shows</h2>
-          <ul>
-              <li>
-                  <span class="artist">Metallica</span>
-                  <span class="date-time">February 14, 2023 at 6:00 PM</span>
-                  <span class="location">48 N. Main St, Three Rivers, MI, 49093</span>
-              </li>
-          </ul>
-      </section> -->
   
     <div id="youtube" >
       <div id="aboutus" class="box">
@@ -73,26 +61,56 @@
           it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
             Built in 1911, it is the oldest movie theatre in the south-west Michigan area.</p>
       </div>
-          <script src="script.js"></script>
           <div id="player"></div>
     </div>
-          
 
-    <!-- <section id="upcoming-shows">
-      <h2>Upcoming Shows</h2>
-        <ul>
-            <li>
-                <span class="artist">Metallica</span>
-                <span class="date-time">February 14, 2023 at 6:00 PM</span>
-                <span class="location">48 N. Main St, Three Rivers, MI, 49093</span>
-            </li>
-        </ul>
-
-    </section>
 
     </div>
     <div id="reserveUpcoming">
-      <div class="reservation">
+      <section class="upcoming">
+        <h2 id="resTitle">Upcoming Shows at The Riviera</h2>
+        <div class="card-container">
+          <div class="photo-container">
+            <div class="date">
+              <div class="day">19</div>
+              <div class="month">JANUARY</div>
+            </div>
+            <div class="image"></div>
+          </div>
+          <div class="info-container">
+            <Main class="event-name">Metallica</Main>
+            <div class="event-location">Three Rivers, Michigan</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="photo-container">
+            <div class="date">
+              <div class="day">20</div>
+              <div class="month">JANUARY</div>
+            </div>
+            <div class="image"></div>
+          </div>
+          <div class="info-container">
+            <div class="event-name">Luke Combs</div>
+            <div class="event-location">Three Rivers, Michigan</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="photo-container">
+            <div class="date">
+              <div class="day">21</div>
+              <div class="month">JANUARY</div>
+            </div>
+            <div class="image"></div>
+          </div>
+          <div class="info-container">
+            <div class="event-name">Papa Roach</div>
+            <div class="event-location">Three Rivers, Michigan</div>
+          </div>
+        </div>
+  
+      </section>
+      <div class="reservation"> 
         <h1>RESERVE NOW</h1>
         <form action="reservation.php" method="post">
             <div class="elem-group">
@@ -117,67 +135,13 @@
             </div>
             <div class="elem-group inlined">
                 <label for="checkin-date">Check-in Date</label>
-                <input type="date" id="checkin-date" name="checkin" required>
+                <input type="date" id="checkindate" name="checkin" required>
             </div>
             <button id ="btn2" type="submit">Reserve Now</button>
         </form>
-              <div class="upcoming">
-        <h2>Upcoming Shows at The Riviera</h2>
-        <div class="card-container">
-          <div class="photo-container">
-            <div class="date">
-              <div class="day">19</div>
-              <div class="month">JANUARY</div>
-            </div>
-            <div class="image"></div>
-          </div>
-          <div class="info-container">
-            <div class="event-name">
-              <Main>Metallica</Main>
-            </div>
-            <div class="event-location">
-             Three Rivers, Michigan
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="photo-container">
-            <div class="date">
-              <div class="day">20</div>
-              <div class="month">JANUARY</div>
-            </div>
-            <div class="image"></div>
-          </div>
-          <div class="info-container">
-            <div class="event-name">
-             Luke Combs
-            </div>
-            <div class="event-location">
-             Three Rivers, Michigan
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="photo-container">
-            <div class="date">
-              <div class="day">21</div>
-              <div class="month">JANUARY</div>
-            </div>
-            <div class="image"></div>
-          </div>
-          <div class="info-container">
-            <div class="event-name">
-              Papa Roach
-            </div>
-            <div class="event-location">
-              Three Rivers, Michigan
-            </div>
-          </div>
-        </div>
-      
+        <div id="submit-message"></div>
       </div>
     </div>
-    
     <div id="forecast"></div>
 
     <script src="script.js"></script>
@@ -252,10 +216,14 @@
                       <div id="endContact"></div>
                   
                     </form>
+                    <div id="message"></div>
                   </div>
-
-    </div>
-  
+                  <script src="script.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+    </script>
     </body>
 
 </html>
