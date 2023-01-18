@@ -79,13 +79,14 @@ fetch("https://api.weather.gov/gridpoints/IWX/48,75/forecast")
     weather.appendChild(forecastContainer);
 });
 
-
-// possible solution for local storage
 function submitForm() {
-  let name = document.getElementById("fname").value;
-  localStorage.setItem("fname", name);
-  document.getElementById("message").innerHTML = "Thank you for reaching out " + name + ", we will contact you soon!";
+  let name = document.getElementById("name").value;
+  let lastname = document.getElementById("lastname").value;
+  
+  document.getElementById("message").innerHTML = "Thank you for reaching out " + $(name), $(lastname) + ", we will contact you soon!";
+
+  localStorage.setItem("name", JSON.stringify(name));
+  localStorage.setItem("lastname", JSON.stringify(lastname));
+  preventdefault();
 }
-
-
-
+  submitForm();
