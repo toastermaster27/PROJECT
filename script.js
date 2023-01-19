@@ -83,7 +83,7 @@ function submitForm() {
   let name = document.getElementById("name").value;
   let lastname = document.getElementById("lastname").value;
   
-  document.getElementById("message").innerHTML = "Thank you for reaching out " + $(name), $(lastname) + ", we will contact you soon!";
+  document.getElementById("message").innerHTML = "Thank you for reaching out " + name, lastname + ", we will contact you soon!";
 
   localStorage.setItem("name", JSON.stringify(name));
   localStorage.setItem("lastname", JSON.stringify(lastname));
