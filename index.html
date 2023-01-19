@@ -15,12 +15,26 @@
         <button id="btn1" onclick="scrollFunction1()"> About
           <div class="line"></div> </button>
         <button id="btn1" onclick="scrollFunction2()"> Contact
-          <div class="line"></div> </button>
-        <button id="btn1" onclick="openImage()"> Menu 
-          <div class="line"></div></button>
 
-      </nav>
-  <!-- comment idk -->
+        <div class="line"></div> </button>
+        <button id="btn1" onclick="openMenu()">
+            <ul class="navbar-links">
+              <li class="navbar-dropdown">
+                  <a href="#Menu">Menu</a>
+              <div class="dropdown">
+                  <a href="#">Side Salad</a>
+                  <a href="#">Pepperoni Pizza</a>
+                  <a href="#">Pesto Pizza</a>
+                  <a href="#">Cheese Pizza</a>
+                  <a href="#">Caprese Sandwich</a>
+               </div>
+              </li>
+             </ul>
+        </button>
+        <!-- <button id="btn1" class="" onclick="openMenu()"> Menu 
+        <div class="line"></div></button>     -->
+    </nav>
+
   </header>
       <div class="slideshow-container">
           <div class="mySlides fade">
@@ -41,6 +55,7 @@
           <!-- Next and previous buttons -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         </div>
         <br>
         
