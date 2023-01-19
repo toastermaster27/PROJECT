@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" href="css/foundation.css" />
     <title>Theatre Project</title>
-</head>
-
-<body>
-  <header>
-    <p id="title1">Riviera Theatre</p>
-    <nav>
+  </head>
+  <body>
+    <header>
+      <p id="title1" class="title-bar">Riviera Theatre</p>
+      <nav>
         <button id="btn1" onclick="scrollFunction1()"> About
-        <div class="line"></div> </button>
+          <div class="line"></div> </button>
         <button id="btn1" onclick="scrollFunction2()"> Contact
+
         <div class="line"></div> </button>
         <button id="btn1" onclick="openMenu()">
             <ul class="navbar-links">
@@ -34,210 +34,205 @@
         <!-- <button id="btn1" class="" onclick="openMenu()"> Menu 
         <div class="line"></div></button>     -->
     </nav>
-<!-- comment idk -->
-</header>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img1.jpg" style="width:100%">
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img2.jpg" style="width:100%">
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img3.jpg" style="width:100%">
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+
+  </header>
+      <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img1.jpg" style="width:100%">
+          </div>
         
-</div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img3.jpg" style="width:100%">
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  
-    <div id="youtube" >
-      <div id="aboutus" class="box">
-          <p id="head1">About Us</p>
-          <p>The Riviera Theatre is a 370 seat venue in Three Rivers, Michigan. Located in our beautiful, historic downtown,
-          it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
-            Built in 1911, it is the oldest movie theatre in the south-west Michigan area.</p>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-          <div id="player"></div>
-    </div>
-
-
-    </div>
-    <div id="reserveUpcoming">
-      <section class="upcoming">
-        <h2 id="resTitle">Upcoming Shows at The Riviera</h2>
-        <div class="card-container">
-          <div class="photo-container">
-            <div class="date">
-              <div class="day">19</div>
-              <div class="month">JANUARY</div>
-            </div>
-            <div class="image"></div>
-          </div>
-          <div class="info-container">
-            <Main class="event-name">Metallica</Main>
-            <div class="event-location">Three Rivers, Michigan</div>
-          </div>
+          
+  </div>
+  
+    
+      <div id="youtube" >
+        <div id="aboutus" class="box">
+            <p id="head1">About Us</p>
+            <p>The Riviera Theatre is a 370 seat venue in Three Rivers, Michigan. Located in our beautiful, historic downtown,
+            it has been meticulously renovated and is now being used for films, concerts, live performance, and other special events.
+              Built in 1911, it is the oldest movie theatre in the south-west Michigan area.</p>
         </div>
-        <div class="card-container">
-          <div class="photo-container">
-            <div class="date">
-              <div class="day">20</div>
-              <div class="month">JANUARY</div>
-            </div>
-            <div class="image"></div>
-          </div>
-          <div class="info-container">
-            <div class="event-name">Luke Combs</div>
-            <div class="event-location">Three Rivers, Michigan</div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="photo-container">
-            <div class="date">
-              <div class="day">21</div>
-              <div class="month">JANUARY</div>
-            </div>
-            <div class="image"></div>
-          </div>
-          <div class="info-container">
-            <div class="event-name">Papa Roach</div>
-            <div class="event-location">Three Rivers, Michigan</div>
-          </div>
+        <div class="responsive-embed">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL4zeGBN6NpGT3OABo3OsIQ4HJdUxPfDOu&index=4" frameborder="0" allowfullscreen></iframe>
         </div>
   
-      </section>
-      <div class="reservation"> 
-        <h1>RESERVE NOW</h1>
-        <form action="reservation.php" method="post">
-            <div class="elem-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
-            </div>
-            <div class="elem-group">
-                <label for="email">Your E-mail</label>
-                <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-            </div>
-            <div class="elem-group">
-                <label for="phone">Your Phone</label>
-                <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-            </div>
-            <div class="elem-group inlined">
-                <label for="adult">Adults</label>
-                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-            </div>
-            <div class="elem-group inlined">
-                <label for="child">Children</label>
-                <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-            </div>
-            <div class="elem-group inlined">
-                <label for="checkin-date">Check-in Date</label>
-                <input type="date" id="checkindate" name="checkin" required>
-            </div>
-            <button id ="btn2" type="submit">Reserve Now</button>
-        </form>
-        <div id="submit-message"></div>
+  
       </div>
-    </div>
-    <div id="forecast"></div>
+      <div id="reserveUpcoming">
+        <section class="upcoming">
+          <h2 id="resTitle">Upcoming Shows at The Riviera</h2>
+          <div class="card-container">
+            <div class="photo-container">
+              <div class="date">
+                <div class="day">19</div>
+                <div class="month">JANUARY</div>
+              </div>
+              <div class="image"></div>
+            </div>
+            <div class="info-container">
+              <Main class="event-name">Metallica</Main>
+              <div class="event-location">Three Rivers, Michigan</div>
+            </div>
+          </div>
+  
+          <div class="card-container">
+            <div class="photo-container">
+              <div class="date">
+                <div class="day">20</div>
+                <div class="month">JANUARY</div>
+              </div>
+              <div class="image"></div>
+            </div>
+            <div class="info-container">
+              <div class="event-name">Luke Combs</div>
+              <div class="event-location">Three Rivers, Michigan</div>
+            </div>
+          </div>
+  
+          <div class="card-container">
+            <div class="photo-container">
+              <div class="date">
+                <div class="day">21</div>
+                <div class="month">JANUARY</div>
+              </div>
+              <div class="image"></div>
+            </div>
+            <div class="info-container">
+              <div class="event-name">Papa Roach</div>
+              <div class="event-location">Three Rivers, Michigan</div>
+            </div>
+          </div>
+  
+          <div class="card-container">
+            <div class="photo-container">
+              <div class="date">
+                <div class="day">3</div>
+                <div class="month">FEBRUARY</div>
+              </div>
+              <div class="image"></div>
+            </div>
+            <div class="info-container">
+              <Main class="event-name">Cal Scruby</Main>
+              <div class="event-location">Three Rivers, Michigan</div>
+            </div>
+          </div>
+  
+          <div class="card-container">
+            <div class="photo-container">
+              <div class="date">
+                <div class="day">14</div>
+                <div class="month">FEBRUARY</div>
+              </div>
+              <div class="image"></div>
+            </div>
+            <div class="info-container">
+              <Main class="event-name">Bad Bunny</Main>
+              <div class="event-location">Three Rivers, Michigan</div>
+            </div>
+          </div>
+    
+        </section>
+        <div class="reservation"> 
+          <h1>RESERVE NOW</h1>
+          <form>
+              <div class="elem-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+              </div>
+              <div class="elem-group">
+                  <label for="email">Your E-mail</label>
+                  <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+              </div>
+              <div class="elem-group">
+                  <label for="phone">Your Phone</label>
+                  <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+              </div>
+              <div class="elem-group inlined">
+                  <label for="adult">Adults</label>
+                  <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+              </div>
+              <div class="elem-group inlined">
+                  <label for="child">Children</label>
+                  <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+              </div>
+              <div class="elem-group inlined">
+                  <label for="checkin-date">Check-in Date</label>
+                  <input type="date" id="checkindate" name="checkin" required>
+              </div>
+              <button id ="btn2" type="submit">Reserve Now</button>
+          </form>
+          <div id="submit-message"></div>
+        </div>
+      </div>
+      <div id="forecast"></div>
+  
+      <script src="script.js"></script>
+  </body>
+  <footer id="contactForm">
+    
+  <div class="container">
+    <p id="contactForm1" class="medium-8 large-7 columns">Contact</p>
+    <form id="contact-form" >
+                    
+    <label for="name">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <script src="script.js"></script>
-</body>
-<footer id="contactForm">
-          <script>
-            // 2. This code loads the IFrame Player API code asynchronously.
-            var tag = document.createElement('script');
-      
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      
-            // 3. This function creates an <iframe> (and YouTube player)
-            //    after the API code downloads.
-            var player;
-            function onYouTubeIframeAPIReady() {
-              player = new YT.Player('player', {
-                height: '390',
-                width: '640',
-                videoId: 'CD-E-LDc384',
-                playerVars: {
-                  'playsinline': 1
-                },
-                events: {
-                  'onReady': onPlayerReady,
-                  'onStateChange': onPlayerStateChange
-                }
-              });
-            }
-      
-            // 4. The API will call this function when the video player is ready.
-            function onPlayerReady(event) {
-              event.target.playVideo();
-            }
-      
-            // 5. The API calls this function when the player's state changes.
-            //    The function indicates that when playing a video (state=1),
-            //    the player should play for six seconds and then stop.
-            var done = false;
-            function onPlayerStateChange(event) {
-              if (event.data == YT.PlayerState.PLAYING && !done) {
-                setTimeout(stopVideo, 60000);
-                done = true;
-              }
-            }
-            function stopVideo() {
-              player.stopVideo();
-            }
-          </script>
-                  <div class="container">
-                    <p id="contactForm1">Contact</p>
-                    <form action="action_page.php">
-                  
-                      <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  
-                      <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  
-                      <label for="country">Country</label>
-                      <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                      </select>
-                  
-                      <label for="subject">Subject</label>
-                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                  
-                      <input type="submit" value="Submit">
-                      <div id="endContact"></div>
-                  
-                    </form>
-                    <div id="message"></div>
-                  </div>
-                  <script src="script.js"></script>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-    </script>
-    </body>
-
+    <label for="email">E-Mail</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+                    
+    <label for="country">Country</label>
+    <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+    </select>
+                    
+    <label for="message">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+    <button id="Submit" type="submit">Submit</button>
+    <div id="endContact"></div>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  </body>
 </html>
+
+
+
